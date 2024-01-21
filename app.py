@@ -17,7 +17,7 @@ def predict():
         Classification = pickled_model.predict([[float(PL,PW)]])
         print(Classification)
     
-    return render_template('prediction.html')
+    return render_template('prediction.html', Classification=Classification)
 
 
 if __name__ == '__main__':
